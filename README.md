@@ -2,7 +2,7 @@
 
 Tired of Git quirkiness?
 
-Don't really need 99% of its features, as you're mostly developing alone?
+Don't really need 99% of its features, and you're mostly developing alone?
 
 Don't like Subversion / Mercurial / etc?
 
@@ -17,5 +17,7 @@ Try IVC!
 * Versions are deflated diffs, making history storage quite compact
 * Friendly towards big binary blobs - it won't waste your time by trying to compress a high-entropy binary file (instead, ivc will detect that it's a binary and use signature-based block diffing instead)
 * Easy-to-understand version storage - you can manipulate your history easily and without need for arcane knowledge
+* Free from hassles of protecting your code against predatory big tech companies making paid AI models - IVC ain't GIT so most crawlers won't even know how to deal with it
+* Can be used with a git server - simply dump base64-encoded version of files from your IVC server onto that git server (after all, we don't care about git and the server is most likely free, so who cares)
 
-### This document (and in fact the tool itself) is WIP
+### This document (and in fact the tool itself) is very much WIP
